@@ -1,301 +1,9 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-06-07T21:09:00.457Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1998600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 50,
-        "name": "Search description case insensitive",
-        "description": "",
-        "id": "find-transactions-in-account-activity;search-description-case-insensitive;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 766816700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 9882101700,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "the user accesses the Find Transactions tab",
-            "match": {
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.the_user_accesses_the_Find_Transactions_tab()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 912682900,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "the user enters description \"ONLINE\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ONLINE\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.the_user_enters_description(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 118966000,
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1131710100,
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "results table should only show descriptions containing \"ONLINE\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ONLINE\"",
-                  "offset": 55
-                }
-              ],
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.results_table_should_only_show_descriptions_containing(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 319863900,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "the user enters description \"online\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"online\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.the_user_enters_description(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 90973300,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1019744800,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "results table should only show descriptions containing \"ONLINE\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ONLINE\"",
-                  "offset": 55
-                }
-              ],
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.results_table_should_only_show_descriptions_containing(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-06-07T21:09:14.924Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1001600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 51,
-        "name": "Search description case insensitive",
-        "description": "",
-        "id": "find-transactions-in-account-activity;search-description-case-insensitive;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 1362598000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 9096327100,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "the user accesses the Find Transactions tab",
-            "match": {
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.the_user_accesses_the_Find_Transactions_tab()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 856750800,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "the user enters description \"OFFICE\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"OFFICE\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.the_user_enters_description(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 137959800,
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1233634500,
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "results table should only show descriptions containing \"OFFICE\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"OFFICE\"",
-                  "offset": 55
-                }
-              ],
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.results_table_should_only_show_descriptions_containing(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 661806200,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "the user enters description \"office\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"office\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.the_user_enters_description(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 127962700,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1018701000,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "results table should only show descriptions containing \"OFFICE\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"OFFICE\"",
-                  "offset": 55
-                }
-              ],
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.results_table_should_only_show_descriptions_containing(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-06-07T21:09:29.437Z",
+        "start_timestamp": "2020-10-02T20:39:37.447Z",
         "before": [
           {
             "result": {
@@ -306,14 +14,14 @@
             }
           }
         ],
-        "line": 52,
-        "name": "Search description case insensitive",
+        "line": 4,
+        "name": "Login with valid credentials",
         "description": "",
-        "id": "find-transactions-in-account-activity;search-description-case-insensitive;;4",
+        "id": "user-should-be-able-to-login;login-with-valid-credentials",
         "after": [
           {
             "result": {
-              "duration": 1160703800,
+              "duration": 580808500,
               "status": "passed"
             },
             "match": {
@@ -322,258 +30,51 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 8683460500,
+              "duration": 7995331800,
               "status": "passed"
             },
-            "line": 41,
-            "name": "the user accesses the Find Transactions tab",
+            "line": 5,
+            "name": "the user is on the login page",
             "match": {
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.the_user_accesses_the_Find_Transactions_tab()"
+              "location": "com.zerobank.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1192643300,
+              "duration": 1748902700,
               "status": "passed"
             },
-            "line": 42,
-            "name": "the user enters description \"TRANSFER\"",
+            "line": 6,
+            "name": "the user logs in using \"username\" and \"password\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"TRANSFER\"",
-                  "offset": 28
+                  "val": "\"username\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 38
                 }
               ],
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.the_user_enters_description(java.lang.String)"
+              "location": "com.zerobank.step_definitions.LoginStepDefs.the_user_logs_in_using_and(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 141957700,
+              "duration": 15994000,
               "status": "passed"
             },
-            "line": 43,
-            "name": "clicks search",
+            "line": 7,
+            "name": "the user should be able to login",
             "match": {
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1127667300,
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "results table should only show descriptions containing \"TRANSFER\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"TRANSFER\"",
-                  "offset": 55
-                }
-              ],
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.results_table_should_only_show_descriptions_containing(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 365892500,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "the user enters description \"transfer\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"transfer\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.the_user_enters_description(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 167952000,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1019698100,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "results table should only show descriptions containing \"TRANSFER\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"TRANSFER\"",
-                  "offset": 55
-                }
-              ],
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.results_table_should_only_show_descriptions_containing(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-06-07T21:09:43.313Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 53,
-        "name": "Search description case insensitive",
-        "description": "",
-        "id": "find-transactions-in-account-activity;search-description-case-insensitive;;5",
-        "after": [
-          {
-            "result": {
-              "duration": 669845100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 7872688900,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "the user accesses the Find Transactions tab",
-            "match": {
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.the_user_accesses_the_Find_Transactions_tab()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 903735200,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "the user enters description \"SUPPLY\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"SUPPLY\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.the_user_enters_description(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 106972200,
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1078680400,
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "results table should only show descriptions containing \"SUPPLY\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"SUPPLY\"",
-                  "offset": 55
-                }
-              ],
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.results_table_should_only_show_descriptions_containing(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 308938600,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "the user enters description \"supply\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"supply\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.the_user_enters_description(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 94942800,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1014702300,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "results table should only show descriptions containing \"SUPPLY\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"SUPPLY\"",
-                  "offset": 55
-                }
-              ],
-              "location": "com.zerobank.step_definitions.FindTransactionsStepDefs.results_table_should_only_show_descriptions_containing(java.lang.String)"
+              "location": "com.zerobank.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
             },
             "keyword": "Then "
           }
@@ -585,11 +86,11 @@
         ]
       }
     ],
-    "name": "Find Transactions in Account Activity",
+    "name": "User should be able to login",
     "description": "",
-    "id": "find-transactions-in-account-activity",
+    "id": "user-should-be-able-to-login",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/FindTransactions.feature",
+    "uri": "file:src/test/resources/features/Login.feature",
     "tags": []
   }
 ]

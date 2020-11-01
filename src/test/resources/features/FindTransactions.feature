@@ -36,7 +36,7 @@ Feature: Find Transactions in Account Activity
       | ONLINE   | OFFICE |
       | TRANSFER | SUPPLY |
 
-  @wip
+
   Scenario Outline: Search description case insensitive
     Given the user accesses the Find Transactions tab
     When the user enters description "<word1>"

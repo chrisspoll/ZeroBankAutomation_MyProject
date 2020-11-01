@@ -143,6 +143,14 @@ public class FindTransactionsPage extends BasePage{
     @FindBy(xpath = "(//tbody)[2]/tr/td[2]")
     public List<WebElement> descriptions;
 
+    @FindBy(xpath = "(//tbody)[2]/tr/td[3]")
+    public List<WebElement> deposits;
+
+    @FindBy(xpath = "(//tbody)[2]/tr/td[4]")
+    public List<WebElement> withdrawals;
+
+    @FindBy(id = "aa_type")
+    public WebElement typeDropDown;
 
 
 

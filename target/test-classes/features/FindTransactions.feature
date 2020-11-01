@@ -36,7 +36,7 @@ Feature: Find Transactions in Account Activity
       | ONLINE   | OFFICE |
       | TRANSFER | SUPPLY |
 
-  @wip
+
   Scenario Outline: Search description case insensitive
     Given the user accesses the Find Transactions tab
     When the user enters description "<word1>"
@@ -51,3 +51,18 @@ Feature: Find Transactions in Account Activity
       | OFFICE   | office   |
       | TRANSFER | transfer |
       | SUPPLY   | supply   |
+
+
+  Scenario: Type
+    Given the user accesses the Find Transactions tab
+    And clicks search
+    Then results table should show at least one result under Deposit
+    Then results table should show at least one result under Withdrawal
+    When user selects type "Deposit"
+    And clicks search
+    Then results table should show at least one result under Deposit
+    But results table should show no result under Withdrawal
+    When user selects type "Withdrawal"
+    And clicks search
+    Then results table should show at least one result under Withdrawal
+    But results table should show no result under Deposit

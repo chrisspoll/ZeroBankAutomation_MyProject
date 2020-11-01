@@ -7,12 +7,14 @@ import com.zerobank.pages.LoginPage;
 import com.zerobank.utilities.BrowserUtils;
 import com.zerobank.utilities.ConfigurationReader;
 import com.zerobank.utilities.Driver;
+import io.cucumber.java.en.But;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class FindTransactionsStepDefs {
 
@@ -38,7 +40,9 @@ public class FindTransactionsStepDefs {
 
     @When("clicks search")
     public void clicks_search() {
-        new FindTransactionsPage().findBtn.click();
+        FindTransactionsPage findTransactionsPage = new FindTransactionsPage();
+        BrowserUtils.waitForClickablility(findTransactionsPage.findBtn,5);
+        findTransactionsPage.findBtn.click();
     }
 
     @Then("results table should only show transactions dates between {string} to {string}")
@@ -104,25 +108,88 @@ public class FindTransactionsStepDefs {
     }
 
 
+    @Then("results table should show at least one result under Deposit")
+    public void results_table_should_show_at_least_one_result_under_Deposit() {
+        FindTransactionsPage findTransactionsPage = new FindTransactionsPage();
+        BrowserUtils.waitFor(1);
+        boolean bool = false;
+        for (String deposit : BrowserUtils.getElementsText(findTransactionsPage.deposits)) {
+            if (!deposit.isEmpty()){
+                bool = true;
+                break;
+            }
+        }
+        Assert.assertTrue("Verify results table should show at least one result under Deposit",bool);
+    }
+
+    @Then("results table should show at least one result under Withdrawal")
+    public void results_table_should_show_at_least_one_result_under_Withdrawal() {
+        FindTransactionsPage findTransactionsPage = new FindTransactionsPage();
+        BrowserUtils.waitFor(1);
+        boolean bool = false;
+        for (String deposit : BrowserUtils.getElementsText(findTransactionsPage.withdrawals)) {
+            if (!deposit.isEmpty()){
+                bool = true;
+                break;
+            }
+        }
+        Assert.assertTrue("Verify results table should show at least one result under Withdrawal",bool);
+    }
+
+
+
+    @Then("results table should show no result under Withdrawal")
+    public void results_table_should_show_no_result_under_Withdrawal() {
+        FindTransactionsPage findTransactionsPage = new FindTransactionsPage();
+        boolean bool = false;
+        for (String deposit : BrowserUtils.getElementsText(findTransactionsPage.withdrawals)) {
+            if (!deposit.isEmpty()){
+                bool = true;
+                break;
+            }
+        }
+        Assert.assertFalse("Verify results table should show at least one result under Withdrawal",bool);
+    }
+
+    @When("user selects type {string}")
+    public void user_selects_type(String str) {
+        FindTransactionsPage findTransactionsPage = new FindTransactionsPage();
+        Select type = new Select(findTransactionsPage.typeDropDown);
+        type.selectByVisibleText(str);
+    }
+
+    @Then("results table should show no result under Deposit")
+    public void results_table_should_show_no_result_under_Deposit() {
+        FindTransactionsPage findTransactionsPage = new FindTransactionsPage();
+        boolean bool = false;
+        for (String deposit : BrowserUtils.getElementsText(findTransactionsPage.deposits)) {
+            if (!deposit.isEmpty()){
+                bool = true;
+                break;
+            }
+        }
+        Assert.assertFalse("Verify results table should show at least one result under Deposit",bool);
+    }
 
 
 
 
 
+/*
+    @When("user selects type Deposit")
+    public void user_selects_type_Deposit() {
+        FindTransactionsPage findTransactionsPage = new FindTransactionsPage();
+        Select type = new Select(findTransactionsPage.typeDropDown);
+        type.selectByValue("DEPOSIT");
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @When("user selects type Withdrawal")
+    public void user_selects_type_Withdrawal() {
+        FindTransactionsPage findTransactionsPage = new FindTransactionsPage();
+        Select type = new Select(findTransactionsPage.typeDropDown);
+        type.selectByValue("WITHDRAWAL");
+    }
+*/
 
 
 }
