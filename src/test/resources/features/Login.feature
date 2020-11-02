@@ -1,4 +1,4 @@
-
+@login
 Feature: User should be able to login
 @wip
   Scenario: Login with valid credentials
