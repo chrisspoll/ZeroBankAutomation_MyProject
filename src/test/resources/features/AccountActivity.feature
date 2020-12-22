@@ -1,6 +1,6 @@
 Feature: Account Activity
 
-
+  @regression
   Scenario: Verify account activity page title and drop down options
     Given the user is logged in
     When the user navigates Account Activity
@@ -18,3 +18,5 @@ Feature: Account Activity
       | Description |
       | Deposit     |
       | Withdrawal  |
+
+

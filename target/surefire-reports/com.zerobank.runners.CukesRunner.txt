@@ -1,25 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: com.zerobank.runners.CukesRunner
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 44.921 s <<< FAILURE! - in com.zerobank.runners.CukesRunner
-user completes a successful Pay operation(Pay Bills)  Time elapsed: 42.976 s  <<< ERROR!
-org.openqa.selenium.WebDriverException: 
-chrome not reachable
-  (Session info: chrome=83.0.4103.97)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-EB4BI5O', ip: '192.168.43.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\BiLAL\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57130}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 4e068bbc456a90d702f22fb9cb4727d8
-*** Element info: {Using=xpath, value=//*[@id='alert_content']/span}
-
-user completes a successful Pay operation(Pay Bills)  Time elapsed: 42.979 s  <<< ERROR!
-org.openqa.selenium.WebDriverException: 
-chrome not reachable
-  (Session info: chrome=83.0.4103.97)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-EB4BI5O', ip: '192.168.43.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\BiLAL\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57130}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 4e068bbc456a90d702f22fb9cb4727d8
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.003 s <<< FAILURE! - in com.zerobank.runners.CukesRunner
+initializationError(com.zerobank.runners.CukesRunner)  Time elapsed: 0.003 s  <<< ERROR!
+io.cucumber.core.gherkin.FeatureParserException: Failed to parse resource at: file:///C:/Users/BiLAL/IdeaProjects/ZeroBankAutomation_MyProject/src/test/resources/features/PayBills.feature
+Caused by: io.cucumber.core.gherkin.vintage.internal.gherkin.ParserException$CompositeParserException: 
+Parser errors:
+(4:3): expected: #TagLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty, got 'Background:'
+(5:5): expected: #TagLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty, got 'Given the user is logged in'
+(6:5): expected: #TagLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty, got 'When the user navigates Pay Bills'
+(7:5): expected: #TagLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty, got 'Then the page should have the title "Zero - Pay Bills"'
 

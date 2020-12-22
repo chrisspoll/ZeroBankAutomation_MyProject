@@ -1,5 +1,5 @@
 Feature: Account Summary
-
+  @regression
   Scenario: Verify account summary page titles, account types and columns
     Given the user is on the login page
     When the user logs in using "username" and "password"

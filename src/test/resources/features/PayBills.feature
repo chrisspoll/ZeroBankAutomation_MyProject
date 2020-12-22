@@ -5,11 +5,11 @@ Feature: Pay Bills
     Given the user is logged in
     When the user navigates Pay Bills
     Then the page should have the title "Zero - Pay Bills"
-
+  @regression
   Scenario: user completes a successful Pay operation
     When user completes a successful Pay operation
     Then The payment was successfully submitted. should be displayed
-
+  @regression
   Scenario: user tries to make a payment without entering the amount
     When user enters the amount "" and date "2020-11-11" and description "payment"
     And user clicks on Pay button
