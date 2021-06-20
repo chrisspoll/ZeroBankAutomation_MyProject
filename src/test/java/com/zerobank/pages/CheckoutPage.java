@@ -10,5 +10,6 @@ public class CheckoutPage {
 
         System.out.println("Hello3");
         System.out.println("Hello4");
+        System.out.println("Hello5");
     }
 }
